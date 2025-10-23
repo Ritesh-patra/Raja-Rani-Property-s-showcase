@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raja Rani Green Valley - RajaRani Real Estate</title>
+    <title>Raja Rani Dream Homes - RajaRani Real Estate</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.0/remixicon.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -13,53 +14,84 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+
         .animate-fade-in-up {
             animation: fadeInUp 0.8s ease-out;
         }
     </style>
 </head>
+
 <body class="bg-white dark:bg-black text-gray-900 dark:text-gray-100 transition-colors duration-300">
     <!-- Header -->
-    <header class="sticky top-0 z-1000 bg-white dark:bg-gray-900 shadow-sm transition-colors duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-amber-900 dark:text-amber-600">
-                Raja<span class="text-yellow-600 dark:text-yellow-500">Rani</span>
+    <header class="sticky top-0 z-[999] bg-white dark:bg-gray-900 shadow-sm transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-2 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="images/dreamhomes.jpg" alt="RajaRani Logo" class="w-10 h-auto object-contain">
+
             </a>
+
             <div class="flex items-center gap-6">
                 <nav id="nav" class="hidden md:flex gap-8 items-center">
-                    <a href="index.html" class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Home</a>
-                    <a href="#gallery" class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Gallery</a>
-                    <a href="#videos" class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Videos</a>
-                    <a href="#contact" class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Contact</a>
+                    <a href="index.html"
+                        class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Home</a>
+                    <a href="#gallery"
+                        class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Gallery</a>
+                    <a href="#videos"
+                        class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Videos</a>
+                    <a href="#contact"
+                        class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Contact</a>
                 </nav>
                 <!-- Fixed theme toggle button with proper icon display -->
-                <button class="w-11 h-11 rounded-full border-2 border-amber-900 dark:border-amber-600 text-amber-900 dark:text-amber-500 flex items-center justify-center hover:bg-amber-900 dark:hover:bg-amber-600 hover:text-white transition-all duration-300 hover:scale-110" id="themeToggle" title="Toggle Dark Mode">
+                <button
+                    class="w-11 h-11 hidden rounded-full border-2 border-amber-900 dark:border-amber-600 text-amber-900 dark:text-amber-500 flex items-center justify-center hover:bg-amber-900 dark:hover:bg-amber-600 hover:text-white transition-all duration-300 hover:scale-110"
+                    id="themeToggle" title="Toggle Dark Mode">
                     <i class="ri-moon-line text-lg"></i>
                 </button>
-                <button class="md:hidden text-2xl text-amber-900 dark:text-amber-600 bg-none border-none cursor-pointer" id="menuToggle">
+                <button class="md:hidden text-2xl mr-8 bg-red-600dark:text-amber-600 bg-none border-none cursor-pointer"
+                    id="menuToggle">
                     <i class="ri-menu-line"></i>
                 </button>
             </div>
         </div>
-        <div class="hidden md:hidden absolute top-16 left-0 right-0 bg-white dark:bg-gray-900 flex flex-col gap-4 p-8 shadow-lg" id="mobileMenu">
-            <a href="index.html" class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Home</a>
-            <a href="#gallery" class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Gallery</a>
-            <a href="#videos" class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Videos</a>
-            <a href="#contact" class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Contact</a>
+        <div class="hidden md:hidden absolute top-16 left-0 right-0 bg-white dark:bg-gray-900 flex flex-col gap-4 p-8 shadow-lg"
+            id="mobileMenu">
+            <a href="index.html"
+                class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Home</a>
+            <a href="#gallery"
+                class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Gallery</a>
+            <a href="#videos"
+                class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Videos</a>
+            <a href="#contact"
+                class="text-gray-600 dark:text-gray-300 font-medium hover:text-amber-900 dark:hover:text-amber-500 transition-colors">Contact</a>
         </div>
     </header>
 
+
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-gray-100 dark:from-gray-800 to-white dark:to-black py-12 sm:py-16 px-4 sm:px-8 text-center transition-colors duration-300">
+    <section
+        class="bg-gradient-to-br from-gray-100 dark:from-gray-800 to-white dark:to-black py-12 sm:py-16 px-4 sm:px-8 text-center transition-colors duration-300">
         <div class="max-w-4xl mx-auto">
-            <!-- Updated property name to Raja Rani Green Valley -->
-            <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4 animate-fade-in-up">Raja Rani Green Valley</h1>
-            <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-6 animate-fade-in-up">Eco-Friendly 2 BHK & 3 BHK Apartments with Lush Green Surroundings</p>
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4 animate-fade-in-up">
+                Raja Rani Dream Homes
+            </h1>
+            <p
+                class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-6 flex items-center justify-center w-full  gap-2 animate-fade-in-up">
+                <i class="ri-map-pin-line text-amber-900 dark:text-amber-500"></i>
+                Aska Road, Berhampur
+            </p>
+
+
+            <!-- 🏞️ Image Section -->
+            <div class="relative overflow-hidden rounded-2xl shadow-lg animate-fade-in-up">
+                <img src="images/aska.png" alt="Sunset Valley Villa"
+                    class="w-full h-80 sm:h-[500px] object-cover hover:scale-105 transition-transform duration-700 ease-in-out" />
+            </div>
         </div>
     </section>
 
@@ -68,7 +100,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
             <div class="lg:col-span-2">
                 <!-- Updated property details for Green Valley -->
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Raja Rani Green Valley</h2>
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Raja Rani Dream Homes</h2>
                 <div class="flex items-center gap-2 text-gray-600 dark:text-gray-300 mb-6 text-lg">
                     <i class="ri-map-pin-line"></i>
                     <span>Suburban Area, Nature's Lap</span>
@@ -80,25 +112,34 @@
                         <div class="text-sm text-gray-600 dark:text-gray-400">Bedrooms</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3xl text-amber-900 dark:text-amber-500 mb-2"><i class="ri-water-flash-line"></i></div>
+                        <div class="text-3xl text-amber-900 dark:text-amber-500 mb-2"><i
+                                class="ri-water-flash-line"></i></div>
                         <div class="text-2xl font-bold text-gray-900 dark:text-white">2-3</div>
                         <div class="text-sm text-gray-600 dark:text-gray-400">Bathrooms</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3xl text-amber-900 dark:text-amber-500 mb-2"><i class="ri-ruler-2-line"></i></div>
+                        <div class="text-3xl text-amber-900 dark:text-amber-500 mb-2"><i class="ri-ruler-2-line"></i>
+                        </div>
                         <div class="text-2xl font-bold text-gray-900 dark:text-white">1300-1900</div>
                         <div class="text-sm text-gray-600 dark:text-gray-400">Sq Ft</div>
                     </div>
                 </div>
                 <div class="text-4xl font-bold text-amber-900 dark:text-amber-500 mb-4">₹50-85 Lakhs</div>
                 <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed mb-8">
-                    Spacious 2 BHK and 3 BHK eco-friendly apartments nestled in lush green surroundings. Features sustainable architecture, rainwater harvesting, solar panels, and organic gardens. Perfect for families seeking a peaceful lifestyle away from city chaos while maintaining modern amenities. Includes jogging tracks, yoga center, community gardens, and nature trails.
+                    Spacious 2 BHK and 3 BHK eco-friendly apartments nestled in lush green surroundings. Features
+                    sustainable architecture, rainwater harvesting, solar panels, and organic gardens. Perfect for
+                    families seeking a peaceful lifestyle away from city chaos while maintaining modern amenities.
+                    Includes jogging tracks, yoga center, community gardens, and nature trails.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <button class="px-7 py-3 rounded-full font-semibold bg-amber-900 dark:bg-amber-700 text-white hover:bg-amber-800 dark:hover:bg-amber-600 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2" onclick="downloadPDF('Raja Rani Green Valley')">
+                    <button
+                        class="px-7 py-3 rounded-full font-semibold bg-amber-900 dark:bg-amber-700 text-white hover:bg-amber-800 dark:hover:bg-amber-600 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2"
+                        onclick="downloadPDF('Raja Rani Green Valley')">
                         <i class="ri-download-line"></i> Download Brochure
                     </button>
-                    <button class="px-7 py-3 rounded-full font-semibold bg-green-600 dark:bg-green-700 text-white hover:bg-green-700 dark:hover:bg-green-600 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2" onclick="contactViaWhatsApp('Raja Rani Green Valley')">
+                    <button
+                        class="px-7 py-3 rounded-full font-semibold bg-green-600 dark:bg-green-700 text-white hover:bg-green-700 dark:hover:bg-green-600 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2"
+                        onclick="contactViaWhatsApp('Raja Rani Dream Homes')">
                         <i class="ri-whatsapp-line"></i> WhatsApp
                     </button>
                 </div>
@@ -110,130 +151,174 @@
     <section class="max-w-7xl mx-auto px-4 sm:px-8 py-12 sm:py-16" id="gallery">
         <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center">Property Gallery</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
-            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105" onclick="openImageModal('/placeholder.svg?height=400&width=400')">
-                <img src="/placeholder.svg?height=400&width=400" alt="Building Exterior" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"><i class="ri-zoom-in-line text-white text-3xl"></i></div>
+            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                onclick="openImageModal('images/dream1.jpg')">
+                <img src="images/dream1.jpg" alt="Building Exterior"
+                    class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                <div
+                    class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <i class="ri-zoom-in-line text-white text-3xl"></i>
+                </div>
             </div>
-            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105" onclick="openImageModal('/placeholder.svg?height=400&width=400')">
-                <img src="/placeholder.svg?height=400&width=400" alt="Living Room" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"><i class="ri-zoom-in-line text-white text-3xl"></i></div>
+            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                onclick="openImageModal('images/dream2.jpg')">
+                <img src="images/dream2.jpg" alt="Living Room"
+                    class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                <div
+                    class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <i class="ri-zoom-in-line text-white text-3xl"></i>
+                </div>
             </div>
-            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105" onclick="openImageModal('/placeholder.svg?height=400&width=400')">
-                <img src="/placeholder.svg?height=400&width=400" alt="Master Bedroom" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"><i class="ri-zoom-in-line text-white text-3xl"></i></div>
-            </div>
-            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105" onclick="openImageModal('/placeholder.svg?height=400&width=400')">
-                <img src="/placeholder.svg?height=400&width=400" alt="Kitchen" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"><i class="ri-zoom-in-line text-white text-3xl"></i></div>
-            </div>
-            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105" onclick="openImageModal('/placeholder.svg?height=400&width=400')">
-                <img src="/placeholder.svg?height=400&width=400" alt="Bathroom" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"><i class="ri-zoom-in-line text-white text-3xl"></i></div>
-            </div>
-            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105" onclick="openImageModal('/placeholder.svg?height=400&width=400')">
-                <img src="/placeholder.svg?height=400&width=400" alt="Balcony" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"><i class="ri-zoom-in-line text-white text-3xl"></i></div>
-            </div>
-            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105" onclick="openImageModal('/placeholder.svg?height=400&width=400')">
-                <img src="/placeholder.svg?height=400&width=400" alt="Dining Area" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"><i class="ri-zoom-in-line text-white text-3xl"></i></div>
-            </div>
-            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105" onclick="openImageModal('/placeholder.svg?height=400&width=400')">
-                <img src="/placeholder.svg?height=400&width=400" alt="Home Office" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"><i class="ri-zoom-in-line text-white text-3xl"></i></div>
-            </div>
-            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105" onclick="openImageModal('/placeholder.svg?height=400&width=400')">
-                <img src="/placeholder.svg?height=400&width=400" alt="Guest Bedroom" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"><i class="ri-zoom-in-line text-white text-3xl"></i></div>
-            </div>
-            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105" onclick="openImageModal('/placeholder.svg?height=400&width=400')">
-                <img src="/placeholder.svg?height=400&width=400" alt="Hallway" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"><i class="ri-zoom-in-line text-white text-3xl"></i></div>
-            </div>
-            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105" onclick="openImageModal('/placeholder.svg?height=400&width=400')">
-                <img src="/placeholder.svg?height=400&width=400" alt="Laundry Room" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"><i class="ri-zoom-in-line text-white text-3xl"></i></div>
-            </div>
-            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105" onclick="openImageModal('/placeholder.svg?height=400&width=400')">
-                <img src="/placeholder.svg?height=400&width=400" alt="Garden Area" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"><i class="ri-zoom-in-line text-white text-3xl"></i></div>
+            <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                onclick="openImageModal('images/aska.png')">
+                <img src="images/aska.png" alt="Master Bedroom"
+                    class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                <div
+                    class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <i class="ri-zoom-in-line text-white text-3xl"></i>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Videos Section -->
-    <section class="bg-gray-100 dark:bg-gray-900 py-12 sm:py-16 px-4 sm:px-8 transition-colors duration-300" id="videos">
+    <section class="bg-gray-100 dark:bg-gray-900 py-12 sm:py-16 px-4 sm:px-8 transition-colors duration-300"
+        id="videos">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center">Property Videos</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center">Property Videos
+            </h2>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div class="relative w-full h-56 bg-gray-300 dark:bg-gray-700 flex items-center justify-center cursor-pointer overflow-hidden" onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ')">
-                        <img src="/placeholder.svg?height=250&width=350" alt="Exterior Tour" class="w-full h-full object-cover">
-                        <div class="absolute w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300"><i class="ri-play-fill text-amber-900 text-2xl ml-1"></i></div>
+                <!-- vid1 -->
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+
+                    <div class="relative w-full h-[420px] bg-gray-300 dark:bg-gray-700 flex items-center justify-center cursor-pointer overflow-hidden"
+                        onclick="openVideoModal('videos/home1.mp4')">
+
+                        <!-- Portrait Image -->
+                        <video autoplay muted controls src="videos/home1.mp4" alt="Exterior Tour"
+                            class="w-full h-full object-cover object-center">
+
+                            <!-- Play Button -->
+                            <div
+                                class="absolute w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300">
+                                <i class="ri-play-fill text-amber-900 text-2xl ml-1"></i>
+                            </div>
                     </div>
                     <div class="p-4 sm:p-6">
                         <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Building Tour</h3>
-                        <p class="text-gray-600 dark:text-gray-300 text-sm">Complete walkthrough of the eco-friendly building exterior and green spaces.</p>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            Complete walkthrough of the building exterior, entrance, and common areas.
+                        </p>
                     </div>
                 </div>
 
-                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div class="relative w-full h-56 bg-gray-300 dark:bg-gray-700 flex items-center justify-center cursor-pointer overflow-hidden" onclick="openVideoModal('https://www.youtube.com/embed/jNQXAC9IVRw')">
-                        <img src="/placeholder.svg?height=250&width=350" alt="Interior Tour" class="w-full h-full object-cover">
-                        <div class="absolute w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300"><i class="ri-play-fill text-amber-900 text-2xl ml-1"></i></div>
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+
+                    <!-- Portrait Video (Drone View) -->
+                    <div class="relative w-full h-[420px] bg-gray-300 dark:bg-gray-700 flex items-center justify-center overflow-hidden cursor-pointer"
+                        onclick="openVideoModal('videos/home2.mp4')">
+
+                        <!-- Drone Thumbnail -->
+                        <video autoplay muted controls src="videos/home2.mp4" alt="Drone View"
+                            class="w-full h-full object-cover">
+
+                            <!-- Play Button -->
+                            <div
+                                class="absolute w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300">
+                                <i class="ri-play-fill text-amber-900 text-2xl ml-1"></i>
+                            </div>
                     </div>
+
+                    <!-- Info Section -->
                     <div class="p-4 sm:p-6">
-                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Interior Tour</h3>
-                        <p class="text-gray-600 dark:text-gray-300 text-sm">Explore luxurious interiors, bedrooms, kitchen, and living spaces.</p>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Home Tour</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            Take an immersive walkthrough of the entire home, exploring its luxurious interiors,
+                            spacious rooms,
+                            and exquisite design details from every angle.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+
+                    <!-- Portrait Video (Drone View) -->
+                    <div class="relative w-full h-[420px] bg-gray-300 dark:bg-gray-700 flex items-center justify-center overflow-hidden cursor-pointer"
+                        onclick="openVideoModal('videos/home3.mp4')">
+
+                        <!-- Drone Thumbnail -->
+                        <video autoplay muted controls src="videos/home3.mp4" alt="Drone View"
+                            class="w-full h-full object-cover">
+
+                            <!-- Play Button -->
+                            <div
+                                class="absolute w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300">
+                                <i class="ri-play-fill text-amber-900 text-2xl ml-1"></i>
+                            </div>
+                    </div>
+
+                    <!-- Info Section -->
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Drone View</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            Experience a stunning aerial view of the property and surrounding landscape captured in high
+                            definition.
+                        </p>
                     </div>
                 </div>
 
-                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                    <div class="relative w-full h-56 bg-gray-300 dark:bg-gray-700 flex items-center justify-center cursor-pointer overflow-hidden" onclick="openVideoModal('https://www.youtube.com/embed/9bZkp7q19f0')">
-                        <img src="/placeholder.svg?height=250&width=350" alt="Amenities" class="w-full h-full object-cover">
-                        <div class="absolute w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300"><i class="ri-play-fill text-amber-900 text-2xl ml-1"></i></div>
-                    </div>
-                    <div class="p-4 sm:p-6">
-                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Green Amenities</h3>
-                        <p class="text-gray-600 dark:text-gray-300 text-sm">Eco-friendly amenities, gardens, yoga center, and nature trails.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="bg-gradient-to-r from-amber-900 dark:from-amber-800 to-amber-800 dark:to-amber-900 py-12 sm:py-16 px-4 sm:px-8 text-white transition-colors duration-300" id="contact">
+    <section
+        class="bg-gradient-to-r from-amber-900 dark:from-amber-800 to-amber-800 dark:to-amber-900 py-12 sm:py-16 px-4 sm:px-8 text-white transition-colors duration-300"
+        id="contact">
         <div class="max-w-2xl mx-auto">
             <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-center">Interested in This Property?</h2>
-            <p class="text-center mb-8 text-amber-100">Get in touch with us for more information and to schedule a viewing</p>
+            <p class="text-center mb-8 text-amber-100">Get in touch with us for more information and to schedule a
+                viewing</p>
 
             <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
                 <div>
                     <label for="name" class="block mb-2 font-semibold text-sm">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required class="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/30 text-white placeholder-white/70 focus:outline-none focus:bg-white/15 focus:border-yellow-400 transition-all duration-300">
+                    <input type="text" id="name" name="name" placeholder="Your name" required
+                        class="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/30 text-white placeholder-white/70 focus:outline-none focus:bg-white/15 focus:border-yellow-400 transition-all duration-300">
                 </div>
 
                 <div>
                     <label for="email" class="block mb-2 font-semibold text-sm">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" required class="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/30 text-white placeholder-white/70 focus:outline-none focus:bg-white/15 focus:border-yellow-400 transition-all duration-300">
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required
+                        class="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/30 text-white placeholder-white/70 focus:outline-none focus:bg-white/15 focus:border-yellow-400 transition-all duration-300">
                 </div>
 
                 <div>
                     <label for="phone" class="block mb-2 font-semibold text-sm">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required class="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/30 text-white placeholder-white/70 focus:outline-none focus:bg-white/15 focus:border-yellow-400 transition-all duration-300">
+                    <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required
+                        class="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/30 text-white placeholder-white/70 focus:outline-none focus:bg-white/15 focus:border-yellow-400 transition-all duration-300">
                 </div>
 
                 <div>
                     <label for="message" class="block mb-2 font-semibold text-sm">Message</label>
-                    <textarea id="message" name="message" placeholder="Tell us about your interest..." required class="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/30 text-white placeholder-white/70 focus:outline-none focus:bg-white/15 focus:border-yellow-400 transition-all duration-300 resize-none min-h-32"></textarea>
+                    <textarea id="message" name="message" placeholder="Tell us about your interest..." required
+                        class="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/30 text-white placeholder-white/70 focus:outline-none focus:bg-white/15 focus:border-yellow-400 transition-all duration-300 resize-none min-h-32"></textarea>
                 </div>
 
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <button type="submit" class="flex-1 px-6 py-3 rounded-full font-semibold bg-yellow-500 dark:bg-yellow-600 text-gray-900 hover:bg-yellow-400 dark:hover:bg-yellow-500 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                    <button type="submit"
+                        class="flex-1 px-6 py-3 rounded-full font-semibold bg-yellow-500 dark:bg-yellow-600 text-gray-900 hover:bg-yellow-400 dark:hover:bg-yellow-500 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2">
                         <i class="ri-send-plane-line"></i> Send Message
                     </button>
-                    <button type="button" class="flex-1 px-6 py-3 rounded-full font-semibold bg-green-500 dark:bg-green-600 text-white hover:bg-green-600 dark:hover:bg-green-500 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2" onclick="submitViaWhatsApp()">
+                    <button type="button"
+                        class="flex-1 px-6 py-3 rounded-full font-semibold bg-green-500 dark:bg-green-600 text-white hover:bg-green-600 dark:hover:bg-green-500 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2"
+                        onclick="submitViaWhatsApp()">
                         <i class="ri-whatsapp-line"></i> WhatsApp
                     </button>
                 </div>
@@ -244,65 +329,102 @@
     <!-- Image Modal -->
     <div class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center" id="imageModal">
         <div class="bg-white dark:bg-gray-900 rounded-2xl max-w-4xl max-h-screen overflow-auto relative">
-            <button class="absolute top-4 right-4 bg-none border-none text-2xl cursor-pointer text-gray-600 dark:text-gray-300 hover:text-amber-900 dark:hover:text-amber-500 z-10" onclick="closeImageModal()">
+            <button
+                class="absolute top-4 right-4 bg-none border-none text-2xl cursor-pointer text-gray-600 dark:text-gray-300 hover:text-amber-900 dark:hover:text-amber-500 z-10"
+                onclick="closeImageModal()">
                 <i class="ri-close-line"></i>
             </button>
-            <img id="modalImage" class="w-full h-auto max-h-screen object-contain" src="/placeholder.svg" alt="Gallery Image">
+            <img id="modalImage" class="w-full h-auto max-h-screen object-contain" src="/placeholder.svg"
+                alt="Gallery Image">
         </div>
     </div>
 
     <!-- Video Modal -->
     <div class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center" id="videoModal">
         <div class="bg-white dark:bg-gray-900 rounded-2xl max-w-4xl w-full mx-4 relative">
-            <button class="absolute top-4 right-4 bg-none border-none text-2xl cursor-pointer text-gray-600 dark:text-gray-300 hover:text-amber-900 dark:hover:text-amber-500 z-10" onclick="closeVideoModal()">
+            <button
+                class="absolute top-4 right-4 bg-none border-none text-2xl cursor-pointer text-gray-600 dark:text-gray-300 hover:text-amber-900 dark:hover:text-amber-500 z-10"
+                onclick="closeVideoModal()">
                 <i class="ri-close-line"></i>
             </button>
-            <iframe id="videoFrame" class="w-full aspect-video rounded-2xl" src="/placeholder.svg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="videoFrame" class="w-full aspect-video rounded-2xl" src="/placeholder.svg" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="bg-gray-900 dark:bg-black text-white py-12 sm:py-16 px-4 sm:px-8 transition-colors duration-300">
         <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+
+            <!-- Company Info -->
             <div>
-                <h3 class="text-lg font-bold mb-4 text-yellow-500">RajaRani Real Estate</h3>
-                <p class="text-gray-400 mb-4">Your trusted partner in finding premium properties and luxury living spaces.</p>
+                <h3 class="text-lg font-bold mb-4 text-yellow-500">Raja Rani Heights</h3>
+                <p class="text-gray-400 mb-4">
+                    Luxury Has Evolved — redefining premium living with modern design, comfort, and elegance.
+                </p>
                 <div class="flex gap-4">
-                    <a href="#" class="w-10 h-10 bg-amber-900 dark:bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-800 dark:hover:bg-amber-600 transition-all duration-300 hover:-translate-y-1"><i class="ri-facebook-fill"></i></a>
-                    <a href="#" class="w-10 h-10 bg-amber-900 dark:bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-800 dark:hover:bg-amber-600 transition-all duration-300 hover:-translate-y-1"><i class="ri-instagram-line"></i></a>
-                    <a href="#" class="w-10 h-10 bg-amber-900 dark:bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-800 dark:hover:bg-amber-600 transition-all duration-300 hover:-translate-y-1"><i class="ri-linkedin-fill"></i></a>
-                    <a href="#" class="w-10 h-10 bg-amber-900 dark:bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-800 dark:hover:bg-amber-600 transition-all duration-300 hover:-translate-y-1"><i class="ri-twitter-fill"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100088773827960"
+                        class="w-10 h-10 bg-amber-900 dark:bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-800 dark:hover:bg-amber-600 transition-all duration-300 hover:-translate-y-1">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/raja_rani_homes?igsh=ZHU3YnVqaDQwbXJz&utm_source=qr"
+                        class="w-10 h-10 bg-amber-900 dark:bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-800 dark:hover:bg-amber-600 transition-all duration-300 hover:-translate-y-1">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://wa.me/+918895897892"
+                        class="w-10 h-10 bg-amber-900 dark:bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-800 dark:hover:bg-amber-600 transition-all duration-300 hover:-translate-y-1">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 bg-amber-900 dark:bg-amber-700 rounded-full flex items-center justify-center hover:bg-amber-800 dark:hover:bg-amber-600 transition-all duration-300 hover:-translate-y-1">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
                 </div>
             </div>
 
+            <!-- Quick Links -->
             <div>
                 <h3 class="text-lg font-bold mb-4 text-yellow-500">Quick Links</h3>
-                <a href="index.html" class="block text-gray-400 hover:text-yellow-500 transition-colors mb-2">Home</a>
-                <a href="#gallery" class="block text-gray-400 hover:text-yellow-500 transition-colors mb-2">Gallery</a>
-                <a href="#videos" class="block text-gray-400 hover:text-yellow-500 transition-colors mb-2">Videos</a>
-                <a href="#contact" class="block text-gray-400 hover:text-yellow-500 transition-colors">Contact</a>
+                <a href="index.html" class="block text-gray-400 hover:text-yellow-500 transition-colors mb-2">
+                    <i class="ri-home-4-line mr-1"></i> Home
+                </a>
+                <a href="#about" class="block text-gray-400 hover:text-yellow-500 transition-colors mb-2">
+                    <i class="ri-information-line mr-1"></i> About
+                </a>
+                <a href="#projects" class="block text-gray-400 hover:text-yellow-500 transition-colors mb-2">
+                    <i class="ri-building-4-line mr-1"></i> Projects
+                </a>
+                <a href="#contact" class="block text-gray-400 hover:text-yellow-500 transition-colors">
+                    <i class="ri-contacts-line mr-1"></i> Contact
+                </a>
             </div>
 
+            <!-- Contact Info -->
             <div>
                 <h3 class="text-lg font-bold mb-4 text-yellow-500">Contact Info</h3>
-                <p class="text-gray-400 mb-2"><i class="ri-phone-line"></i> +91 98765 43210</p>
-                <p class="text-gray-400 mb-2"><i class="ri-mail-line"></i> info@rajarani.com</p>
-                <p class="text-gray-400"><i class="ri-map-pin-line"></i> Premium Plaza, City Center</p>
+                <p class="text-gray-400 mb-2"><i class="ri-mail-line mr-1"></i> realestaterajarani@gmail.com</p>
+                <p class="text-gray-400 mb-2"><i class="ri-phone-line mr-1"></i>+91 88958 97892</p>
+                <p class="text-gray-400 mb-2"><i class="ri-phone-line mr-1"></i>+91 92377 71777</p>
+                <p class="text-gray-400 mb-2"><i class="ri-phone-line mr-1"></i>+91 91247 23354</p>
+                <p class="text-gray-400"><i class="ri-map-pin-line mr-1"></i> Rajarani Tower, Infront of Tahasildar
+                    Office, Kamapalli, Berhampur.</p>
             </div>
 
+            <!-- Business Hours -->
             <div>
                 <h3 class="text-lg font-bold mb-4 text-yellow-500">Business Hours</h3>
                 <p class="text-gray-400 mb-2">Monday - Friday: 9:00 AM - 6:00 PM</p>
                 <p class="text-gray-400 mb-2">Saturday: 10:00 AM - 4:00 PM</p>
                 <p class="text-gray-400">Sunday: Closed</p>
             </div>
+
         </div>
 
         <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
-            <p>&copy; 2025 RajaRani Real Estate. All rights reserved.</p>
+            <p>&copy; 2025 Raja Rani Heights. All rights reserved.</p>
         </div>
     </footer>
-
     <script>
         const themeToggle = document.getElementById('themeToggle');
         const htmlElement = document.documentElement;
@@ -344,12 +466,13 @@
         });
 
         // GSAP Animations
-        window.addEventListener('load', () => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hero section animation
             gsap.from('.hero h1', {
                 duration: 1,
                 opacity: 0,
                 y: 30,
-                ease: 'power3.out'
+                ease: 'power3.out',
             });
 
             gsap.from('.hero p', {
@@ -357,26 +480,28 @@
                 opacity: 0,
                 y: 30,
                 delay: 0.2,
-                ease: 'power3.out'
+                ease: 'power3.out',
             });
 
             // Animate gallery items on scroll
-            const observer = new IntersectionObserver((entries) => {
+            const observer = new IntersectionObserver((entries, obs) => {
                 entries.forEach((entry, index) => {
                     if (entry.isIntersecting) {
-                        gsap.from(entry.target, {
+                        gsap.to(entry.target, {
+                            opacity: 1,
+                            y: 0,
                             duration: 0.8,
-                            opacity: 0,
-                            y: 50,
                             delay: index * 0.1,
-                            ease: 'power3.out'
+                            ease: 'power3.out',
                         });
-                        observer.unobserve(entry.target);
+                        obs.unobserve(entry.target);
                     }
                 });
             }, { threshold: 0.1 });
 
-            document.querySelectorAll('.gallery-item, .video-card').forEach(item => {
+            // Set initial hidden state for smoother animation
+            document.querySelectorAll('.gallery-item, .video-card').forEach((item) => {
+                gsap.set(item, { opacity: 0, y: 50 });
                 observer.observe(item);
             });
         });
@@ -434,7 +559,7 @@
         function contactViaWhatsApp(propertyName) {
             const message = `Hi! I'm interested in the ${propertyName} property. Could you please provide more details?`;
             const encodedMessage = encodeURIComponent(message);
-            const whatsappUrl = `https://wa.me/919876543210?text=${encodedMessage}`;
+            const whatsappUrl = `https://wa.me/918895897892?text=${encodedMessage}`;
             window.open(whatsappUrl, '_blank');
         }
 
@@ -451,7 +576,7 @@
 
             const whatsappMessage = `Hello! I'm ${name}. Email: ${email}, Phone: ${phone}. Message: ${message}`;
             const encodedMessage = encodeURIComponent(whatsappMessage);
-            const whatsappUrl = `https://wa.me/919876543210?text=${encodedMessage}`;
+            const whatsappUrl = `https://wa.me/918895897892?text=${encodedMessage}`;
             window.open(whatsappUrl, '_blank');
         }
 
@@ -464,30 +589,12 @@
         }
 
         // PDF Download Function
-        function downloadPDF(propertyName) {
-            const pdfContent = `
-                Property: ${propertyName}
-                
-                Thank you for your interest in ${propertyName}.
-                
-                For detailed information and brochure, please contact us:
-                Phone: +91 98765 43210
-                Email: info@rajarani.com
-                
-                Visit our website: www.rajarani.com
-            `;
-
-            const element = document.createElement('a');
-            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(pdfContent));
-            element.setAttribute('download', `${propertyName}.txt`);
-            element.style.display = 'none';
-            document.body.appendChild(element);
-            element.click();
-            document.body.removeChild(element);
-
-            alert(`${propertyName} details downloaded!`);
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = 'Green Valley Logo and image.pdf'; // PDF file path
+            link.download = 'RajaRani_Brochure.pdf'; // Desired download name
+            link.click();
         }
-
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -500,4 +607,5 @@
         });
     </script>
 </body>
+
 </html>

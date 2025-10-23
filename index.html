@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raja Rani Dream Homes - RajaRani Real Estate</title>
+    <title>Raja Rani Green Valley - RajaRani Real Estate</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.0/remixicon.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -29,11 +29,13 @@
 
 <body class="bg-white dark:bg-black text-gray-900 dark:text-gray-100 transition-colors duration-300">
     <!-- Header -->
-    <header class="sticky top-0 z-1000 bg-white dark:bg-gray-900 shadow-sm transition-colors duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-amber-900 dark:text-amber-600">
-                Raja<span class="text-yellow-600 dark:text-yellow-500">Rani</span>
-            </a>
+    <header class="sticky top-0 z-[999] bg-white dark:bg-gray-900 shadow-sm transition-colors duration-300">
+        <div class="max-w-7xl mx-auto -px-1 sm:px-8 py-0 flex justify-between items-center">
+           <a href="index.html" class="flex items-center gap-2">
+    <img src="images/WhatsApp Image 2025-10-23 at 17.19.00_acd0a8e9.jpg" alt="RajaRani Logo" class="w-36 h-auto object-contain">
+
+</a>
+
             <div class="flex items-center gap-6">
                 <nav id="nav" class="hidden md:flex gap-8 items-center">
                     <a href="index.html"
@@ -51,7 +53,7 @@
                     id="themeToggle" title="Toggle Dark Mode">
                     <i class="ri-moon-line text-lg"></i>
                 </button>
-                <button class="md:hidden text-2xl text-amber-900 dark:text-amber-600 bg-none border-none cursor-pointer"
+                <button class="md:hidden text-2xl mr-8 bg-red-600dark:text-amber-600 bg-none border-none cursor-pointer"
                     id="menuToggle">
                     <i class="ri-menu-line"></i>
                 </button>
@@ -75,31 +77,33 @@
         class="bg-gradient-to-br from-gray-100 dark:from-gray-800 to-white dark:to-black py-12 sm:py-16 px-4 sm:px-8 text-center transition-colors duration-300">
         <div class="max-w-4xl mx-auto">
             <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4 animate-fade-in-up">
-                Raja Rani Dream Homes
+                Raja Rani Green Valley
             </h1>
-            <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-6 animate-fade-in-up">
-                Luxury villa with breathtaking sunset views and premium amenities
+            <p
+                class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-6 flex items-center justify-center w-full  gap-2 animate-fade-in-up">
+                <i class="ri-map-pin-line text-amber-900 dark:text-amber-500"></i>
+                Ambapua, Berhampur
             </p>
+
 
             <!-- 🏞️ Image Section -->
             <div class="relative overflow-hidden rounded-2xl shadow-lg animate-fade-in-up">
-                <img src="images/aska.png" alt="Sunset Valley Villa"
+                <img src="images/green vally.png" alt="Sunset Valley Villa"
                     class="w-full h-80 sm:h-[500px] object-cover hover:scale-105 transition-transform duration-700 ease-in-out" />
             </div>
         </div>
     </section>
 
-
-
     <!-- Property Header -->
     <section class="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-12">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
             <div class="lg:col-span-2">
-                <!-- Updated property details for Dream Homes -->
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Raja Rani Dream Homes</h2>
+                <!-- Updated property details for Green Valley -->
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Raja Rani Green Valley
+                </h2>
                 <div class="flex items-center gap-2 text-gray-600 dark:text-gray-300 mb-6 text-lg">
                     <i class="ri-map-pin-line"></i>
-                    <span>Premium Location, Aska Road</span>
+                    <span>Premium Location, Ambapua</span>
                 </div>
                 <div class="grid grid-cols-3 gap-4 mb-8 pb-8 border-b-2 border-gray-200 dark:border-gray-700">
                     <div class="text-center">
@@ -132,12 +136,12 @@
                 <div class="flex flex-col sm:flex-row gap-4">
                     <button
                         class="px-7 py-3 rounded-full font-semibold bg-amber-900 dark:bg-amber-700 text-white hover:bg-amber-800 dark:hover:bg-amber-600 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2"
-                        onclick="downloadPDF('Raja Rani Dream Homes')">
+                        onclick="downloadPDF('Raja Rani Green Valley')">
                         <i class="ri-download-line"></i> Download Brochure
                     </button>
                     <button
                         class="px-7 py-3 rounded-full font-semibold bg-green-600 dark:bg-green-700 text-white hover:bg-green-700 dark:hover:bg-green-600 transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2"
-                        onclick="contactViaWhatsApp('Raja Rani Dream Homes')">
+                        onclick="contactViaWhatsApp('Raja Rani Green Valley')">
                         <i class="ri-whatsapp-line"></i> WhatsApp
                     </button>
                 </div>
@@ -159,8 +163,8 @@
                 </div>
             </div>
             <div class="gallery-item relative overflow-hidden rounded-lg aspect-square cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
-                onclick="openImageModal('images/img2.jpg')">
-                <img src="images/img2.jpg" alt="Living Room"
+                onclick="openImageModal('images/green vally.png')">
+                <img src="images/green vally.png" alt="Living Room"
                     class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                 <div
                     class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
@@ -221,52 +225,33 @@
                     </div>
                 </div>
 
-
                 <div
                     class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
 
-                    <!-- Portrait Placeholder -->
-                    <div
-                        class="relative w-full h-[420px] bg-gray-300 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
+                    <!-- Portrait Video (Drone View) -->
+                    <div class="relative w-full h-[420px] bg-gray-300 dark:bg-gray-700 flex items-center justify-center overflow-hidden cursor-pointer"
+                        onclick="openVideoModal('')">
 
-                        <!-- Center Text -->
-                        <h2 class="text-2xl font-semibold text-amber-900 dark:text-amber-400 animate-pulse">
-                            Coming Soon
-                        </h2>
+                        <!-- Drone Thumbnail -->
+                        <video autoplay muted controls src="videos/vid2.mp4" alt="Drone View"
+                            class="w-full h-full object-cover">
+
+                            <!-- Play Button -->
+                            <div
+                                class="absolute w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300">
+                                <i class="ri-play-fill text-amber-900 text-2xl ml-1"></i>
+                            </div>
                     </div>
 
                     <!-- Info Section -->
                     <div class="p-4 sm:p-6">
-                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Upcoming Video</h3>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Drone View</h3>
                         <p class="text-gray-600 dark:text-gray-300 text-sm">
-                            Stay tuned for the next exclusive walkthrough and interior showcase.
+                            Experience a stunning aerial view of the property and surrounding landscape captured in high
+                            definition.
                         </p>
                     </div>
                 </div>
-
-                <div
-                    class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-
-                    <!-- Portrait Placeholder -->
-                    <div
-                        class="relative w-full h-[420px] bg-gray-300 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
-
-                        <!-- Center Text -->
-                        <h2 class="text-2xl font-semibold text-amber-900 dark:text-amber-400 animate-pulse">
-                            Coming Soon
-                        </h2>
-                    </div>
-
-                    <!-- Info Section -->
-                    <div class="p-4 sm:p-6">
-                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Upcoming Video</h3>
-                        <p class="text-gray-600 dark:text-gray-300 text-sm">
-                            Stay tuned for the next exclusive walkthrough and interior showcase.
-                        </p>
-                    </div>
-                </div>
-
-
 
 
             </div>
@@ -400,7 +385,7 @@
             <div>
                 <h3 class="text-lg font-bold mb-4 text-yellow-500">Contact Info</h3>
                 <p class="text-gray-400 mb-2"><i class="ri-mail-line mr-1"></i> realestaterajarani@gmail.com</p>
-                <p class="text-gray-400 mb-2"><i class="ri-phone-line mr-1"></i>+91 82606 04188 </p>
+                <p class="text-gray-400 mb-2"><i class="ri-phone-line mr-1"></i>+91 88958 97892</p>
                 <p class="text-gray-400 mb-2"><i class="ri-phone-line mr-1"></i>+91 92377 71777</p>
                 <p class="text-gray-400 mb-2"><i class="ri-phone-line mr-1"></i>+91 91247 23354</p>
                 <p class="text-gray-400"><i class="ri-map-pin-line mr-1"></i> Rajarani Tower, Infront of Tahasildar
@@ -557,7 +542,7 @@
         function contactViaWhatsApp(propertyName) {
             const message = `Hi! I'm interested in the ${propertyName} property. Could you please provide more details?`;
             const encodedMessage = encodeURIComponent(message);
-            const whatsappUrl = `https://wa.me/919237771777?text=${encodedMessage}`;
+            const whatsappUrl = `https://wa.me/918895897892?text=${encodedMessage}`;
             window.open(whatsappUrl, '_blank');
         }
 
@@ -574,7 +559,7 @@
 
             const whatsappMessage = `Hello! I'm ${name}. Email: ${email}, Phone: ${phone}. Message: ${message}`;
             const encodedMessage = encodeURIComponent(whatsappMessage);
-            const whatsappUrl = `https://wa.me/919237771777?text=${encodedMessage}`;
+            const whatsappUrl = `https://wa.me/918895897892?text=${encodedMessage}`;
             window.open(whatsappUrl, '_blank');
         }
 
